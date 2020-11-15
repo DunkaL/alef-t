@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alef-test</title>
+    <meta name="description" content="alef-test">
+    <link rel="canonical" href="index.html" />
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="alef-test" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:description" content="alef-test" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body id="body">
+    <header class="header">
+        <div class="container header-container">
+            <div class="flex w-100 ai-center jc-between"> 
+                <a class="logo" href="/"> 
+                    <svg>
+                        <use href="img/icons/icons.svg#logo"></use>
+                    </svg> 
+                </a>
+                <nav class="nav">
+                    <div class="nav-col">
+                        <ul class="nav-bar">
+                            <li class="nav-bar-item"> <a class="nav-bar-link" href="#">Main</a> </li>
+                            <li class="nav-bar-item"> <a class="nav-bar-link" href="#">Gallery</a> </li>
+                            <li class="nav-bar-item"> <a class="nav-bar-link" href="#">News</a> </li>
+                            <li class="nav-bar-item"> <a class="nav-bar-link" href="#">Profile</a> </li>
+                        </ul>
+                        <address class="nav-connection"> <a class="nav-connection__phone" href="tel:#">+544 349000000</a>
+                            <div>Звони скорее!</div>
+                        </address>
+                    </div>
+                </nav> <svg id="hamburger" class="hamburger" viewBox="20 20 60 60" width="40">
+                    <path class="line top"
+                        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"></path>
+                    <path class="line middle" d="m 70,50 h -40"></path>
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"></path>
+                </svg>
+            </div>
+            <h1 class="header-title">Найдено 349 котов</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="filter">
+            <div class="filter-title filter-block">Сортировать по:</div>
+            <div class="filter-dropdown filter-block" id="filter-price">
+                <div class="filter-dropdown-value">Цене</div> <svg class="filter-dropdown-icon">
+                    <use href="img/icons/icons.svg#arrow--bottom"></use>
+                </svg>
+            </div>
+            <div class="filter-dropdown filter-block" id="filter-age">
+                <div class="filter-dropdown-value">Возрасту</div> <svg class="filter-dropdown-icon">
+                    <use href="img/icons/icons.svg#arrow--bottom"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <section class="products" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-1.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-1.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span> <span class="products-card__image-discount">-40%</span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="2">2</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="30000"> 30 000 руб. </div>
+                        </div> <button class="products-card__link">Купить</button>
+                    </div>
+                </div>
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-2.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-2.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="3">3</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="40000"> 40 000 руб. </div>
+                        </div> <button class="products-card__link products-card__link--sales" disabled>Продан</button>
+                    </div>
+                </div>
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-3.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-3.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="1">1</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="20000"> 20 000 руб. </div>
+                        </div> <button class="products-card__link">Купить</button>
+                    </div>
+                </div>
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-1.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-1.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="4">4</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="25000"> 25 000 руб. </div>
+                        </div> <button class="products-card__link">Купить</button>
+                    </div>
+                </div>
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-3.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-3.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span> <span class="products-card__image-discount">-40%</span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="1">1</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="30000"> 30 000 руб. </div>
+                        </div> <button class="products-card__link">Купить</button>
+                    </div>
+                </div>
+                <div class="col grids-4 grids-ms-4 products-block">
+                    <div class="products-card">
+                        <div class="products-card__image">
+                            <picture>
+                                <source srcset="img/card-2.webp" type="image/webp"><img class="products-card__image-img"
+                                    src="img/card-2.jpg" alt=""></picture> <span
+                                class="products-card__image-heart heart-js"> <svg>
+                                    <use href="img/icons/icons.svg#heart"></use>
+                                </svg> </span>
+                        </div>
+                        <div class="products-card__info">
+                            <h3 class="products-card__info-title">Кот полосатый</h3>
+                            <div class="products-card__info-configuration row">
+                                <div class="col grids-4 grids-tn-4">
+                                    <div>Коричневый</div>
+                                    <div>окрас</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold"> <span class="products-card__info-age" data-sort="5">5</span> мес.
+                                    </div>
+                                    <div>Возраст</div>
+                                </div>
+                                <div class="col grids-4 grids-tn-4">
+                                    <div class="bold">4</div>
+                                    <div>Кол-во лап</div>
+                                </div>
+                            </div>
+                            <div class="products-card__info-price" data-sort="10000"> 10 000 руб. </div>
+                        </div> <button class="products-card__link products-card__link--sales" disabled>Продан</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination"> <button class="btn btn-outline btn-big btn-pagination">Показать еще 20</button>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-container">
+        <div class="scroll-container-cont"> <a href="#body" class="scroll-to"> <svg class="scroll-to-icon">
+                    <use href="img/icons/icons.svg#arrow--top"></use>
+                </svg> </a> </div>
+    </div>
+    <section class="footer">
+        <div class="container">
+            <div class="footer-cont row">
+                <div class="col grids-5 grids-ms-5">
+                    <h3 class="footer-cont__title">Успей купить!</h3>
+                    <p class="footer-cont__subtitle">Подпишись и успей словить все акции</p>
+                </div>
+                <div class="col grids-7 grids-ms-7">
+                    <form class="form form-validate" action="#">
+                        <div class="form-flex w-100"> <input class="form-input form-input--mr form-input--width-100"
+                                type="email" placeholder="Email" required /> <button type="button"
+                                class="btn btn-primary form-btn-big">Подписаться</button> </div> <label> <input
+                                type="checkbox" class="form-checkbox"> <span class="form-checkbox-text">Подписаться на
+                                новости</span> </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script rel="preload" src="js/script.js" as="script"></script> <span class="notification notification-error"></span>
+    <span class="notification notification-correctly"></span>
+</body>
+
+</html>
